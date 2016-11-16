@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C89B40">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/chaxun"
+            android:maxLength="10"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="CHAXUN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_view01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+
+
+</LinearLayout>

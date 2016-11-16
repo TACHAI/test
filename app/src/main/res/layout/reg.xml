@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b7">
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignStart="@+id/et_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名:"
+        android:padding="10dp"
+        android:id="@+id/textView01"
+        android:layout_alignBottom="@+id/et_name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码:"
+        android:padding="10dp"
+        android:id="@+id/textView02"
+        android:layout_alignBaseline="@+id/et_password"
+        android:layout_alignBottom="@+id/et_password"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:layout_below="@+id/textView01"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView02" />
+    <Button
+        android:id="@+id/zhuche"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text="注册"
+        android:background="@drawable/b8"
+        android:layout_weight="0.06"
+        android:layout_below="@+id/textView02"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+    <Button
+        android:id="@+id/denlv"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/b8"
+        android:text="登录"
+        android:layout_below="@+id/zhuche"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
